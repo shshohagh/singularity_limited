@@ -1,0 +1,64 @@
+1st Phase Technical Test for Backend Developer - Singularity Limited
+
+Dear Candidate,
+Thank you for your interest in Singularity Limited. Please read the instructions very
+carefully. This test was not meant to see how great you can code, but more necessarily
+how much conceptual understanding you have to be considered as a proficient Backend
+Developer.
+
+Let's assume you have to develop a solution for a telco. They have a few simple requirements
+with respect to their application.
+You are now responsible for developing an application based on PHP (Laravel), including
+REST API for mobile application.
+
+Backend Administrative Panel Task
+● User CRUD
+● Role CRUD
+● Permission CRUD
+● Outlet CRUD
+● Adding permissions to a role
+● Adding roles to a user
+● All Outlet show in Google Map with marker
+● Report about outlet activity
+
+REST API Task
+● Get Outlet List
+● User Login
+● Outlet latitude and longitude update
+● Post Outlet Activity Data
+● Logout
+
+Relative Information
+● User roles : Super Admin,Admin,Field User
+● Outlet Activity : Outlet image (multiple) ,visit date
+● Report : Show all outlet activity with filter as like date range,specific outlet wise
+
+Note:
+● Use OAuth2 for REST API login
+● Admin and Super Admin user can not login using REST API
+● Field user can not login in backend administrative panel
+
+More specifically, you are required to provide the followings:
+(1) Problem Statement and Application Scope: We need to understand if you have
+understood the story and the problem well enough. You need to explain to us what you
+have understood from the story above and what exactly you need to do to solve and
+develop this system. You can write down and mention it in the email that you will be
+sending us.
+
+(2) Schema Diagram: Based on your understanding of the problem, you need to draw out
+the database schema diagram. This is required so that we understand you have a solid
+understanding of managing databases. You can provide the schema diagram in any format
+you like: can be made with dbdiagram.io or it can be just a hand-drawn picture.
+
+(3) GitHub Repo/The Codebase: Upon developing the Application, you are required to
+submit it to us. We would prefer to access the codebase through GitHub. We expect you to
+follow the basic practices of PSR-4 coding: error handling, defining environment variables,
+following a convention,comments etc. You are free to choose any database you would like
+for this application.
+
+Once again, we would like to emphasize on the statement that we want to understand how well
+you understand the backend development concepts rather than how good you can code. We
+believe good coding is just a logical sequence of good understanding of the problem.
+If you have any questions, please feel free to contact our representative.
+Best wishes!
+
