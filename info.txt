@@ -73,10 +73,12 @@ npm run dev
 npm install vue-loader@^15.9.8 --save-dev --legacy-peer-deps
 npm run dev
 php artisan migrate
+composer require anhskohbo/no-captcha
 
-Work flow:
+Workflow:
 create new repository from Github Desktop
 create laravel project
 create new Database
 configure .env
+Add reCaptcha
 
