@@ -62,3 +62,21 @@ believe good coding is just a logical sequence of good understanding of the prob
 If you have any questions, please feel free to contact our representative.
 Best wishes!
 
+
+Run:
+composer create-project laravel/laravel singularity_limited
+composer require laravel/ui
+php artisan ui vue --auth
+npm i
+npm install -g npm@8.18.0
+npm run dev
+npm install vue-loader@^15.9.8 --save-dev --legacy-peer-deps
+npm run dev
+php artisan migrate
+
+Work flow:
+create new repository from Github Desktop
+create laravel project
+create new Database
+configure .env
+
