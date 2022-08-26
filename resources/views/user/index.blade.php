@@ -39,7 +39,7 @@ Users
       <td>{{ $res->address }}</td>
       <td>{{ $res->email }}</td>
       <td>{{ $res->user_type }}</td>
-      <td>{{ $res->role->name }}</td>
+      <td>{{ $res->name }}</td>
       <td>{{ $res->created_at }}</td>
       <td>
 
