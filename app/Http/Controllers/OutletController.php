@@ -46,7 +46,6 @@ class OutletController extends Controller
             $outlet->visit_date = $request->visit_date;
             $outlet->latitude = $request->latitude;
             $outlet->longitude = $request->longitude;
-            $outlet->image = json_encode($request->image);
             $outlet->save();
             return redirect()->route('outlet.index');
         }

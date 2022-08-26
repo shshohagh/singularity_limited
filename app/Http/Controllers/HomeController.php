@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
+use App\Models\{User,Outlet};
+
 class HomeController extends Controller
 {
     /**
@@ -23,7 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $outlets = Outlet::all();
+        $mapOutlets = $outlets->makeHidden(['active', 'created_at', 'updated_at', 'image']);
+        $latitude = $outlets->count() && (request()->filled('name') || request()->filled('search')) ? $outlets->average('latitude') : 23.7940146;
+        $longitude = $outlets->count() && (request()->filled('name') || request()->filled('search')) ? $outlets->average('longitude') : 90.3782532;
+        return view('home',compact('outlets', 'mapOutlets', 'latitude', 'longitude'));
     }
     
 }

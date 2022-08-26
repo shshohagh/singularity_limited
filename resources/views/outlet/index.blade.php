@@ -1,9 +1,11 @@
 @extends('layouts.app')
-
+@section('title')
+Outlets
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header"><a style="text-decoration:none;" href="{{ route('outlet.create') }}">{{ __('Add New Outlet') }}</a></div>
 
@@ -21,7 +23,6 @@
       <th scope="col">Name</th>
       <th scope="col">Description</th>
       <th scope="col">Address</th>
-      <th scope="col">Images</th>
       <th scope="col">Visit Date</th>
       <th scope="col">Lat</th>
       <th scope="col">Lon</th>
@@ -37,7 +38,6 @@
       <td>{{ $res->name }}</td>
       <td>{{ $res->description }}</td>
       <td>{{ $res->address }}</td>
-      <td>{{ $res->image }}</td>
       <td>{{ $res->visit_date }}</td>
       <td>{{ $res->latitude }}</td>
       <td>{{ $res->longitude }}</td>

@@ -48,18 +48,6 @@
                             </div>
                         </div>
                         <div class="row mb-3">
-                            <label for="image" class="col-md-4 col-form-label text-md-end">{{ __('Images') }}</label>
-                            <div class="col-md-6">
-                                <input id="image" type="file" class="form-control @error('image') is-invalid @enderror" name="image" value="{{ old('image') }}"  autocomplete="image" autofocus>
-
-                                @error('image')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="row mb-3">
                             <label for="visit_date" class="col-md-4 col-form-label text-md-end">{{ __('Visit Date') }}</label>
                             <div class="col-md-6">
                                 <input id="visit_date" type="text" class="form-control @error('visit_date') is-invalid @enderror" name="visit_date" value="{{ old('visit_date') }}"  autocomplete="visit_date" autofocus>
