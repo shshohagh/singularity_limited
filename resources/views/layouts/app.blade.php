@@ -23,7 +23,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand" target="_blank" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -52,6 +52,31 @@
                                 </li>
                             @endif
                         @else
+                        @if (Route::has('home'))
+                            <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('home') }}"><b>{{ __('Home') }}</b></a>
+                            </li>
+                        @endif
+                          @if (Route::has('outlet.index'))
+                            <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('outlet.index') }}"><b>{{ __('Outlet') }}</b></a>
+                            </li>
+                        @endif
+                        @if (Route::has('user.index'))
+                            <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('user.index') }}"><b>{{ __('User') }}</b></a>
+                            </li>
+                        @endif
+                        @if (Route::has('role.index'))
+                            <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('role.index') }}"><b>{{ __('Role') }}</b></a>
+                            </li>
+                        @endif
+                        @if (Route::has('permission.index'))
+                            <li class="nav-item">
+                                    <a class="nav-link" href="{{ route('permission.index') }}"><b>{{ __('Permissions') }}</b></a>
+                            </li>
+                        @endif
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}

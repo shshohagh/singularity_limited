@@ -12,12 +12,12 @@ You are now responsible for developing an application based on PHP (Laravel), in
 REST API for mobile application.
 
 Backend Administrative Panel Task
-● User CRUD
-● Role CRUD
-● Permission CRUD
-● Outlet CRUD
-● Adding permissions to a role
-● Adding roles to a user
+● User CRUD -
+● Role CRUD -
+● Permission CRUD -
+● Outlet CRUD -
+● Adding permissions to a role -
+● Adding roles to a user -
 ● All Outlet show in Google Map with marker
 ● Report about outlet activity
 
@@ -63,22 +63,11 @@ If you have any questions, please feel free to contact our representative.
 Best wishes!
 
 
-Run:
-composer create-project laravel/laravel singularity_limited
-composer require laravel/ui
-php artisan ui vue --auth
-npm i
-npm install -g npm@8.18.0
-npm run dev
-npm install vue-loader@^15.9.8 --save-dev --legacy-peer-deps
-npm run dev
-php artisan migrate
-composer require anhskohbo/no-captcha
-
 Workflow:
 create new repository from Github Desktop
 create laravel project
 create new Database
 configure .env
 Add reCaptcha
+
 
